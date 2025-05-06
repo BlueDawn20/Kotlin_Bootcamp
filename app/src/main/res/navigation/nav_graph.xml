@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.dev_4.AnasayfaFragment"
+        android:label="AnasayfaFragment" >
+        <action
+            android:id="@+id/action_anasayfaFragment_to_sayfaAFragment"
+            app:destination="@id/sayfaAFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_sayfaXFragment"
+            app:destination="@id/sayfaXFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaAFragment"
+        android:name="com.example.dev_4.SayfaAFragment"
+        android:label="SayfaAFragment" >
+        <action
+            android:id="@+id/action_sayfaAFragment_to_sayfaBFragment"
+            app:destination="@id/sayfaBFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaBFragment"
+        android:name="com.example.dev_4.SayfaBFragment"
+        android:label="SayfaBFragment" >
+        <action
+            android:id="@+id/action_sayfaBFragment_to_sayfaYFragment"
+            app:destination="@id/sayfaYFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaXFragment"
+        android:name="com.example.dev_4.SayfaXFragment"
+        android:label="SayfaXFragment" >
+        <action
+            android:id="@+id/action_sayfaXFragment_to_sayfaYFragment"
+            app:destination="@id/sayfaYFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayfaYFragment"
+        android:name="com.example.dev_4.SayfaYFragment"
+        android:label="SayfaYFragment" />
+</navigation>
